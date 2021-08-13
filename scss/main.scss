@@ -1,0 +1,275 @@
+@import 'config';
+@import 'utilities';
+@import 'item_grid';
+
+// General Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 10px;
+  line-height: 1.5;
+  background: #fff;
+  font-family: 'Nunito', sans-serif;
+  // overflow-y: overlay;
+}
+
+// html {
+//   overflow-y: scroll;
+// }
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+// Logo
+#logo {
+  width: 70px;
+  height: 70px;
+}
+
+//  Main Nav
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  align-items: center;
+  height: 8rem;
+  // letter-spacing: 0.5rem;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 1rem 2rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+    font-size: 1.5rem;
+
+    &:hover {
+      border-color: $medium-color;
+    }
+
+    &.current {
+      border-color: $main-color;
+    }
+  }
+}
+
+// Hero
+.hero {
+  background: $bg-image no-repeat center right / cover;
+  height: 100vh;
+  color: #fff;
+
+  &::before,
+  &-inner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  & * {
+    z-index: 10;
+  }
+
+  &-inner {
+    background: $bg-image no-repeat 20% 30% / cover;
+    height: 8rem;
+    border-bottom: 3px solid $main-color;
+  }
+}
+
+// Home Content
+#home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+
+  h1 {
+    font-size: 6rem;
+    line-height: 1.2;
+    // color: #fff;
+  }
+
+  .home-btn {
+    pointer-events: all;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+
+    &:hover {
+      background-color: $main-color;
+      color: set-text-color($main-color);
+    }
+  }
+}
+
+// About Me Sections
+#about {
+  // About A
+  &-a {
+    .about-info {
+      display: flex;
+      margin-top: 4rem;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      padding: 3rem;
+
+      .bio-image {
+        flex-grow: 0;
+        width: 170px;
+        height: 250px;
+        margin-right: 2rem;
+        background-color: $light-color;
+      }
+
+      .bio {
+        p {
+          text-align: justify;
+          line-height: 3rem;
+          margin-bottom: 2rem;
+          font-size: 2rem;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        a {
+          color: $main-color;
+        }
+      }
+    }
+  }
+
+  &-b {
+    h4 {
+      font-size: 1.5rem;
+      margin-bottom: 0.2rem;
+
+      &:first-of-type {
+        margin-top: 4rem;
+      }
+    }
+
+    .progress {
+      overflow: hidden;
+      height: 20px;
+      background: $medium-color;
+      border-radius: 5px;
+      margin-bottom: 2rem;
+
+      div {
+        height: 100%;
+        color: #fff;
+        text-align: center;
+        background: $main-color;
+      }
+    }
+  }
+}
+
+// Contact
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+// Contact Sections
+#contact {
+  // Section A
+  &-a {
+    flex: 1;
+
+    .contact-table {
+      margin: 0 auto;
+      text-align: left;
+      background-color: #fff;
+      margin-top: 4rem;
+
+      td {
+        padding: 1rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+//Footer
+#main-footer {
+  background-color: #fff;
+  color: #000;
+  height: 7rem;
+  border-top: 3px solid $main-color;
+
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.5rem;
+    letter-spacing: 0.6rem;
+
+    * {
+      margin-right: 1rem;
+    }
+
+    *:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.footer-home {
+  background: none !important;
+  color: #fff !important;
+  border: none !important;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  a {
+    color: #fff;
+  }
+}
