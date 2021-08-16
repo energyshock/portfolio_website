@@ -1,3 +1,4 @@
 node_modules
 /dist/img/psd/
+/dist/img/items/big/
 .vscode

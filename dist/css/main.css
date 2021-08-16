@@ -69,14 +69,14 @@ input[class^='btn-']:hover {
   color: #000; }
 
 .lead {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   margin-bottom: 2rem; }
 
 .text-center {
   text-align: center; }
 
 .section-title {
-  font-size: 2.8rem;
+  font-size: 3rem;
   display: block;
   padding-bottom: 0.5rem;
   text-align: center;
@@ -151,7 +151,7 @@ img {
 #main-nav {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
   align-items: center;
   height: 8rem; }
   #main-nav ul {
@@ -200,7 +200,8 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  pointer-events: none; }
+  pointer-events: none;
+  text-align: center; }
   #home-content h1 {
     font-size: 6rem;
     line-height: 1.2; }
@@ -235,23 +236,24 @@ img {
   #about-a .about-info .bio a {
     color: #ffbc00; }
 
-#about-b h4 {
-  font-size: 1.5rem;
-  margin-bottom: 0.2rem; }
-  #about-b h4:first-of-type {
-    margin-top: 4rem; }
-
-#about-b .progress {
-  overflow: hidden;
-  height: 20px;
-  background: #ccc;
-  border-radius: 5px;
-  margin-bottom: 2rem; }
-  #about-b .progress div {
-    height: 100%;
-    color: #fff;
-    text-align: center;
-    background: #ffbc00; }
+#about-b {
+  padding: 4rem 3rem; }
+  #about-b h4 {
+    font-size: 2rem;
+    margin-bottom: 0.2rem; }
+    #about-b h4:first-of-type {
+      margin-top: 4rem; }
+  #about-b .progress {
+    overflow: hidden;
+    height: 20px;
+    background: #ccc;
+    border-radius: 5px;
+    margin-bottom: 2rem; }
+    #about-b .progress div {
+      height: 100%;
+      color: #fff;
+      text-align: center;
+      background: #ffbc00; }
 
 .flex-container {
   display: flex;
@@ -296,3 +298,159 @@ img {
   right: 0; }
   .footer-home a {
     color: #fff; }
+
+@media (max-width: 900px) {
+  .section-title {
+    font-size: 4rem; }
+  .lead {
+    font-size: 2.7rem; }
+  .btn-main, .btn-light, .btn-dark {
+    padding: 1rem 2rem; }
+  .hero {
+    background: url("../img/showcase.jpg") no-repeat center center/cover; }
+  #home-content {
+    padding: 0 2rem; }
+  #about-a .about-info {
+    align-items: flex-start; }
+    #about-a .about-info .bio p {
+      font-size: 2.5rem; }
+  #about-b h4 {
+    font-size: 2.2rem; }
+  .items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; }
+  .item-description p {
+    font-size: 2.2rem; }
+  .item-image {
+    border: 2px solid #ffbc00; }
+  .item-text {
+    font-size: 1.8rem; }
+  #contact-a .contact-table td {
+    padding: 2rem;
+    font-size: 2.5rem; }
+  #main-footer .footer-content {
+    letter-spacing: 0.2rem; } }
+
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 2.5rem; }
+  .lead {
+    font-size: 1.8rem;
+    margin-bottom: 0; }
+  #logo {
+    width: 55px;
+    height: 55px; }
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 0.5rem 1rem 1rem 1rem; }
+    #main-nav a {
+      font-size: 1.3rem; }
+    #main-nav li {
+      padding: 1rem 1.5rem; }
+  .hero-inner {
+    height: auto;
+    border-bottom: 2px solid #ffbc00; }
+  #home-content h1 {
+    font-size: 4rem; }
+  #home-content .home-btn {
+    font-size: 1.5rem; }
+  #about-a {
+    padding: 2rem; }
+    #about-a .about-info {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+      padding: 1.5rem; }
+      #about-a .about-info .bio-image {
+        margin: 0; }
+      #about-a .about-info .bio {
+        margin-top: 1rem; }
+        #about-a .about-info .bio p {
+          font-size: 1.8rem;
+          line-height: 2.4rem; }
+  #about-b {
+    padding: 2rem; }
+    #about-b h4 {
+      font-size: 1.5rem;
+      letter-spacing: 0.4rem; }
+      #about-b h4:first-of-type {
+        margin-top: 1rem; }
+  #projects-a {
+    padding: 2rem 0; }
+  .items {
+    grid-template-columns: 1fr;
+    gap: 2rem; }
+  .item {
+    padding: 1rem; }
+    .item-description p {
+      margin-bottom: 0; }
+    .item-text {
+      font-size: 1.5rem; }
+  #contact-a {
+    padding: 2rem 0; }
+    #contact-a .contact-table {
+      margin-top: 2rem; }
+      #contact-a .contact-table td {
+        padding: 1rem;
+        font-size: 1.5rem; }
+  #main-footer {
+    height: 5rem;
+    border-top: 2px solid #ffbc00; }
+    #main-footer .footer-content {
+      font-size: 1.2rem; } }
+
+@media (max-height: 500px) {
+  .section-title {
+    font-size: 2.5rem; }
+  .lead {
+    font-size: 1.8rem;
+    margin-bottom: 0; }
+  .hero-inner {
+    height: 6rem; }
+  #main-nav {
+    height: 6rem;
+    padding: 0.5rem 1rem 1rem 1rem; }
+    #main-nav a {
+      font-size: 1.2rem; }
+  #home-content h1 {
+    font-size: 3rem; }
+  #home-content .home-btn {
+    font-size: 1.5rem; }
+  #about-a {
+    padding: 2rem; }
+    #about-a .about-info {
+      margin-top: 2rem;
+      padding: 2rem; }
+      #about-a .about-info .bio-image {
+        margin-right: 2rem; }
+      #about-a .about-info .bio p {
+        font-size: 1.8rem;
+        line-height: 2.4rem; }
+  #about-b {
+    padding: 2rem; }
+    #about-b h4 {
+      font-size: 1.2rem;
+      letter-spacing: 0.4rem; }
+      #about-b h4:first-of-type {
+        margin-top: 1rem; }
+  #projects-a {
+    padding: 2rem 0; }
+  .item-description p {
+    font-size: 1.8rem; }
+  .item-text {
+    font-size: 1.2rem; }
+  #contact-a {
+    padding: 2rem 0; }
+    #contact-a .contact-table {
+      margin-top: 2rem; }
+      #contact-a .contact-table td {
+        padding: 1rem;
+        font-size: 1.5rem; }
+  #main-footer {
+    height: 5rem; }
+    #main-footer .footer-content {
+      font-size: 1.2rem;
+      padding: 1rem 0; } }

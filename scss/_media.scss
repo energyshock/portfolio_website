@@ -1,0 +1,342 @@
+// Tablets and smaller
+@media (max-width: 900px) {
+  // Utilities
+  .section-title {
+    font-size: 4rem;
+  }
+
+  .lead {
+    font-size: 2.7rem;
+  }
+
+  %btn-shared {
+    padding: 1rem 2rem;
+  }
+
+  // Home
+  .hero {
+    background: $bg-image no-repeat center center / cover;
+  }
+
+  #home-content {
+    padding: 0 2rem;
+  }
+
+  // About Me Sections
+  #about {
+    // About A
+    &-a {
+      .about-info {
+        align-items: flex-start;
+
+        .bio p {
+          font-size: 2.5rem;
+        }
+      }
+    }
+
+    // About B
+    &-b {
+      h4 {
+        font-size: 2.2rem;
+      }
+    }
+  }
+
+  // Projects
+  .items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .item {
+    &-description {
+      p {
+        font-size: 2.2rem;
+      }
+    }
+
+    &-image {
+      border: 2px solid $main-color;
+    }
+
+    &-text {
+      font-size: 1.8rem;
+    }
+  }
+
+  // Contact
+  #contact {
+    &-a {
+      .contact-table td {
+        padding: 2rem;
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  // Footer
+  #main-footer {
+    .footer-content {
+      letter-spacing: 0.2rem;
+    }
+  }
+}
+
+// Smartphones
+@media (max-width: 600px) {
+  // Utilities
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .lead {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+
+  // Logo
+  #logo {
+    width: 55px;
+    height: 55px;
+  }
+
+  // Main Nav
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 0.5rem 1rem 1rem 1rem;
+
+    a {
+      font-size: 1.3rem;
+    }
+
+    li {
+      padding: 1rem 1.5rem;
+    }
+  }
+
+  // Hero
+  .hero {
+    &-inner {
+      height: auto;
+      border-bottom: 2px solid $main-color;
+    }
+  }
+
+  // Home Content
+  #home-content {
+    h1 {
+      font-size: 4rem;
+    }
+
+    .home-btn {
+      font-size: 1.5rem;
+    }
+  }
+
+  // About Me
+  #about {
+    // About A
+    &-a {
+      padding: 2rem;
+
+      .about-info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        padding: 1.5rem;
+
+        .bio-image {
+          margin: 0;
+        }
+
+        .bio {
+          margin-top: 1rem;
+
+          p {
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+          }
+        }
+      }
+    }
+
+    // About B
+    &-b {
+      padding: 2rem;
+
+      h4 {
+        font-size: 1.5rem;
+        letter-spacing: 0.4rem;
+
+        &:first-of-type {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+
+  // Projects
+  #projects-a {
+    padding: 2rem 0;
+  }
+
+  .items {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .item {
+    padding: 1rem;
+
+    &-description p {
+      margin-bottom: 0;
+    }
+
+    &-text {
+      font-size: 1.5rem;
+    }
+  }
+
+  // Contact
+  #contact {
+    &-a {
+      padding: 2rem 0;
+
+      .contact-table {
+        margin-top: 2rem;
+
+        td {
+          padding: 1rem;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  // Footer
+  #main-footer {
+    height: 5rem;
+    border-top: 2px solid $main-color;
+
+    .footer-content {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// Landscape
+@media (max-height: 500px) {
+  // Utilities
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .lead {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+
+  // Hero
+  .hero-inner {
+    height: 6rem;
+  }
+
+  // Main Nav
+  #main-nav {
+    height: 6rem;
+    padding: 0.5rem 1rem 1rem 1rem;
+    a {
+      font-size: 1.2rem;
+    }
+  }
+
+  // Home
+  #home-content {
+    h1 {
+      font-size: 3rem;
+    }
+
+    .home-btn {
+      font-size: 1.5rem;
+    }
+  }
+
+  // About Me
+  #about {
+    // About A
+    &-a {
+      padding: 2rem;
+
+      .about-info {
+        margin-top: 2rem;
+        padding: 2rem;
+
+        .bio-image {
+          margin-right: 2rem;
+        }
+
+        .bio p {
+          font-size: 1.8rem;
+          line-height: 2.4rem;
+        }
+      }
+    }
+
+    // About B
+    &-b {
+      padding: 2rem;
+
+      h4 {
+        font-size: 1.2rem;
+        letter-spacing: 0.4rem;
+
+        &:first-of-type {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+
+  // Projects
+  #projects-a {
+    padding: 2rem 0;
+  }
+
+  .item-description p {
+    font-size: 1.8rem;
+  }
+
+  .item-text {
+    font-size: 1.2rem;
+  }
+
+  // Contact
+  #contact {
+    &-a {
+      padding: 2rem 0;
+
+      .contact-table {
+        margin-top: 2rem;
+
+        td {
+          padding: 1rem;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  // Footer
+  #main-footer {
+    height: 5rem;
+
+    .footer-content {
+      font-size: 1.2rem;
+      padding: 1rem 0;
+    }
+  }
+}
