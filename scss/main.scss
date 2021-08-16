@@ -51,7 +51,7 @@ img {
 #main-nav {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
   align-items: center;
   height: 8rem;
   // letter-spacing: 0.5rem;
@@ -123,6 +123,7 @@ img {
   right: 0;
   bottom: 0;
   pointer-events: none;
+  text-align: center;
 
   h1 {
     font-size: 6rem;
@@ -181,9 +182,12 @@ img {
     }
   }
 
+  // About B
   &-b {
+    padding: 4rem 3rem;
+
     h4 {
-      font-size: 1.5rem;
+      font-size: 2rem;
       margin-bottom: 0.2rem;
 
       &:first-of-type {
@@ -273,3 +277,6 @@ img {
     color: #fff;
   }
 }
+
+// Import Media Queries
+@import 'media';
